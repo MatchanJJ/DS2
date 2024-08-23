@@ -8,10 +8,10 @@ def fibonacci(n, memo={}):
     return memo[n]
 #print(fibonacci(10))
 def fibonacci2(n):
-    if n <= 2:
+    if n < 2:
         return n
     return fibonacci2(n - 1) + fibonacci2(n - 2)
-#print(fibonacci2(10))
+#print(fibonacci2(2))
 
 def harmonic_series(n):
     if n == 1:
@@ -38,4 +38,4 @@ def hailstone(n):
     if n%2 == 0:
         return hailstone(n // 2)
     return hailstone(n * 3 + 1)
-hailstone(10)
+#hailstone(10)
