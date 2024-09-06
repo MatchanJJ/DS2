@@ -11,13 +11,13 @@ def fibonacci2(n):
     if n < 2:
         return n
     return fibonacci2(n - 1) + fibonacci2(n - 2)
-#print(fibonacci2(2))
+#print(fibonacci2(5))
 
 def harmonic_series(n):
     if n == 1:
         return 1
     return 1 / n + harmonic_series(n - 1)
-#print(harmonic_series(2))
+#print(harmonic_series(3))
 
 def prob3(n):
     if n == 1:
@@ -38,4 +38,4 @@ def hailstone(n):
     if n%2 == 0:
         return hailstone(n // 2)
     return hailstone(n * 3 + 1)
-#hailstone(10)
+hailstone(10)
