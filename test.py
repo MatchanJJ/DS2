@@ -7,6 +7,7 @@ def fibonacci(n, memo={}):
     memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo)
     return memo[n]
 #print(fibonacci(10))
+
 def fibonacci2(n):
     if n < 2:
         return n
@@ -17,13 +18,13 @@ def harmonic_series(n):
     if n == 1:
         return 1
     return 1 / n + harmonic_series(n - 1)
-#print(harmonic_series(2))
+#print(harmonic_series(10))
 
-def prob3(n):
+def Triangular(n):
     if n == 1:
         return 1
-    return n + prob3(n - 1)
-#print(prob3(5))
+    return n + Triangular(n - 1)
+#print(Triangular(10))
 
 def GCD(n1, n2):
     if n2 == 0:
@@ -38,4 +39,4 @@ def hailstone(n):
     if n%2 == 0:
         return hailstone(n // 2)
     return hailstone(n * 3 + 1)
-#hailstone(10)
+hailstone(27)
